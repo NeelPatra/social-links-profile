@@ -25,8 +25,9 @@ Project preview:
 ---
 
 <h3>Links</h3>
-Solution URL: 
-Live Site URL: 
+
+Solution URL: https://www.frontendmentor.io/solutions/social-links-profile-built-with-html-and-css--Aw7-78kwc
+Live Site URL: https://neelpatra.github.io/social-links-profile/
 
 ---
 
