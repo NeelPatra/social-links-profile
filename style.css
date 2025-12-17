@@ -111,3 +111,9 @@ body {
     outline: 2px solid var(--green);
     outline-offset: 3px;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
