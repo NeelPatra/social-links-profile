@@ -1,0 +1,124 @@
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/static/Inter-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/static/Inter-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/static/Inter-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--grey-900); /*optional*/
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+.card {
+    width: 90%;
+    max-width: 350px;
+    padding: 24px;
+
+    background-color: var(--grey-800);
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.profile h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 6px;
+}
+
+.profile .location {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--green);
+    margin-bottom: 14px; 
+}
+
+.profile .bio {
+    font-size: 14px;
+    color: var(--white);
+    opacity: 0.75;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.links a {
+    display: block;
+    width: 100%;
+    padding: 12px;
+
+    background-color: var(--grey-700);
+    color: var(--white);
+    text-decoration: none;
+
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    text-align: center;
+
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.links a:hover , .links a:focus {
+    background-color: var(--green);
+    color: var(--grey-900);
+}
+
+.links a:focus-visible {
+    outline: 2px solid var(--green);
+    outline-offset: 3px;
+}
